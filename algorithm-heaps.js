@@ -30,9 +30,12 @@ const getPermutations = arr => {
       } else {
         swatInPlace(heapArr, 0, n - 1);
       }
-
+      generate(n - 1, heapArr);
     }
   };
+  generate(arr.length, arr.slice())
+
+  return output;
 }
 
-//
+console.log(getPermutations([1,2]))
